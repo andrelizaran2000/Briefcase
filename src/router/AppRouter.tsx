@@ -11,8 +11,8 @@ export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes> 
-        <Route path="/Briefcase" element={<App/>}/>
-        <Route path="/Briefcase/project/:projectId" element={<Project/>}/>
+        <Route path="/" element={<App/>}/>
+        <Route path="/project/:projectId" element={<Project/>}/>
         <Route path="*" element={<main>There is no page</main>}/>
       </Routes>
     </BrowserRouter>
