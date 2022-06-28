@@ -11,7 +11,7 @@ import { GrayTitle } from './components/Common';
 import AppBarHome from './components/AppBarHome';
 
 // Data
-import { projectData, ProjectData } from './data/projects';
+import { ProjectData } from './data/projects';
 import { GeneralContext } from './components/containers/TranslateContainer';
 
 export default function Project() {
