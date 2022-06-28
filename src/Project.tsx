@@ -1,6 +1,6 @@
 // Modules
 import { grey } from '@mui/material/colors';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import Carousel from 'react-material-ui-carousel'
@@ -12,16 +12,20 @@ import AppBarHome from './components/AppBarHome';
 
 // Data
 import { projectData, ProjectData } from './data/projects';
+import { GeneralContext } from './components/containers/TranslateContainer';
 
 export default function Project() {
 
   const { projectId } = useParams()
   const [projectSelected, setProjectSelected] = useState<ProjectData>({} as ProjectData);
+  const { language } = useContext(GeneralContext);
+  const { t } = useTranslation('projects')
+  const projects:any[] = t('projects', { returnObjects:true }); 
 
   useEffect(() => {
-    const selectedProject = projectData.filter((_, index) => index == Number(projectId as string));
+    const selectedProject = projects.filter((_, index) => index == Number(projectId as string));
     setProjectSelected(selectedProject[0])
-  }, [])
+  }, [language])
 
   if (!projectSelected.title) return <></>
   else {
@@ -91,7 +95,7 @@ function ProjectInformation ({ projectSelected }:ProjectInformationProps) {
     <Stack gap={2}>
       <Stack>
         <GrayTitle>{projectSelected.title}</GrayTitle>
-        <Typography variant='body1' sx={{ color:'white' }}>{projectSelected.descriptionEnglish}</Typography>
+        <Typography variant='body1' sx={{ color:'white' }}>{projectSelected.description}</Typography>
       </Stack>
       <Stack>
         <GrayTitle>{tCommon('titles.technologies')}</GrayTitle>

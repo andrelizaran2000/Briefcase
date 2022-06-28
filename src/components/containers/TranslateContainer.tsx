@@ -1,6 +1,6 @@
 // Modules
 import i18next from "i18next";
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import { I18nextProvider } from "react-i18next";
 
 // Translations
@@ -11,8 +11,10 @@ import projects_es from '../../translations/projects_es.json'
 import personal_en from '../../translations/personal_en.json'
 import personal_es from '../../translations/personal_es.json'
 
-export default function TranslateContainer({ children }:any) {
+export const GeneralContext = createContext({} as { language:string, setLanguage:React.Dispatch<React.SetStateAction<string>> });
 
+export default function TranslateContainer({ children }:any) {
+  
   const [language, setLanguage] = useState('en');
 
   i18next.init({
@@ -34,7 +36,9 @@ export default function TranslateContainer({ children }:any) {
 
   return (
     <I18nextProvider i18n={i18next}>
-      {children}
+      <GeneralContext.Provider value={{ language, setLanguage }}>
+        {children}
+      </GeneralContext.Provider>
     </I18nextProvider>
   )
 }
