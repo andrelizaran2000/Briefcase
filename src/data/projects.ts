@@ -8,8 +8,6 @@ export type ProjectData = {
   repos: {title:string, to:string}[]
 }
 
-import zapateriaA1 from '../../assets/blau_landing/a1.png'
-
 export const projectData: ProjectData[] = [
   {
     id: 0,

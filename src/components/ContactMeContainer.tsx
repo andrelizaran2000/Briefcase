@@ -1,17 +1,24 @@
 // Modules
-import { Grid, Paper, Stack, Typography } from '@mui/material'
+import { 
+  Grid, 
+  Paper, 
+  Stack, 
+  Typography 
+} from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
 import { GrayTitle } from './Common'
 
 // Data
 import { personalDataEnglish } from '../data/personal'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ContactMeContainer () {
+  const { t:tCommon } = useTranslation('common')
   return (
     <Stack>
-      <GrayTitle>Contact me</GrayTitle>
+      <GrayTitle>{tCommon('titles.contact-me')}</GrayTitle>
       <Grid container spacing={2}>
         {personalDataEnglish.contactMe.map(({ title, icon, to }) => (
           <Grid item xs={6} md={4} key={title}>

@@ -1,0 +1,18 @@
+{
+  "change-language": "Cambiar el lenguaje",
+  "titles": {
+    "about-me": "Sobre mi",
+    "hobbies": "Hobbies",
+    "technologies": "Tecnologías",
+    "languages": "Lenguajes",
+    "cv": "CV",
+    "projects": "Proyectos",
+    "contact-me": "Contáctame",
+    "repositories": "Repositorios",
+    "images": "Imágenes"
+  },
+  "messages": {
+    "no-repo": "No repositories available",
+    "no-images": "No images available"
+  }
+}

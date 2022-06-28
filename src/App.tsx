@@ -3,11 +3,11 @@ import { grey } from '@mui/material/colors';
 import { Grid, Stack } from '@mui/material';
 
 // Components
+import AppBarHome from './components/AppBarHome';
 import AboutMeContainer from './components/AboutMeContainer';
-import TechnologiesContainer from './components/TechnologiesContainer';
 import ProjectsContainer from './components/ProjectsContainer';
 import ContactMeContainer from './components/ContactMeContainer';
-import AppBarHome from './components/AppBarHome';
+import TechnologiesContainer from './components/TechnologiesContainer';
 
 export default function App() {
   return (

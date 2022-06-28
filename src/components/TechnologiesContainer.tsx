@@ -1,6 +1,7 @@
 // Modules
-import { Grid, Paper, Stack, Typography } from '@mui/material'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Grid, Paper, Stack, Typography } from '@mui/material';
 
 // Data
 import { personalDataEnglish } from '../data/personal'
@@ -8,9 +9,10 @@ import { personalDataEnglish } from '../data/personal'
 import { GrayTitle } from './Common'
 
 export default function TechnologiesContainer() {
+  const { t:tCommon } = useTranslation('common')
   return (
     <Stack>
-      <GrayTitle>Technologies</GrayTitle>
+      <GrayTitle>{tCommon('titles.technologies')}</GrayTitle>
       <Grid container spacing={3}>
         {personalDataEnglish.technologies.map(({ title, icon }) => (
           <Grid item xs={6} lg={4} key={title}>

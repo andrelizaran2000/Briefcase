@@ -1,0 +1,31 @@
+{
+  "description": "Hi, Im Andre Lizaran and Im frontend developer (fullstack developer in process). I love making clean and useful apps/interfaces. My favorite programming language is Typescript. Im from Veracruz, Mexico.",
+  "hobbies": [
+    "Videogames",
+    "Programming",
+    "Hanging out with friends",
+    "Music"
+  ],
+  "languages": [
+    { "title":"Spanish", "level": "Native" },
+    { "title":"English", "level": "Advanced" }
+  ],
+  "schooling": [
+    {
+      "title": "Computer System Enginnering",
+      "career": "Instituto Tecnológico de Veracruz"
+    }
+  ],
+  "contact-me": [
+    { 
+      "title":"Email", 
+      "to": "mailto:andrelizaran2000@gmail.com", 
+      "icon": "faVoicemail" 
+    },
+    { 
+      "title":"Linkedin", 
+      "to":"https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/", 
+      "icon": "faLinkedin" 
+    }
+  ]
+}

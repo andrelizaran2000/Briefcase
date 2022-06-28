@@ -2,15 +2,16 @@
 import { grey } from '@mui/material/colors';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-import { Grid, Paper, Stack, Typography } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 import Carousel from 'react-material-ui-carousel'
+import { Grid, Paper, Stack, Typography } from '@mui/material'
 
 // Components
 import { GrayTitle } from './components/Common';
+import AppBarHome from './components/AppBarHome';
 
 // Data
-import { projectData, ProjectData } from './data/projects'
-import AppBarHome from './components/AppBarHome';
+import { projectData, ProjectData } from './data/projects';
 
 export default function Project() {
 
@@ -46,27 +47,28 @@ export default function Project() {
 
 function CarouselContainer ({ projectSelected }:ProjectInformationProps) {
 
-  const [time, setTime] = useState(100)
+  const [time, setTime] = useState(1000)
+  const { t:tCommon } = useTranslation('common')
 
   useEffect(() => {
     setTimeout(() => {
       setTime(4000)
-    }, 100)
+    }, 1000)
   }, [])
   
   if (projectSelected.images.length === 0) {
     return (
       <Stack>
-        <GrayTitle>Images</GrayTitle>
+        <GrayTitle>{tCommon('titles.images')}</GrayTitle>
         <Paper sx={{ padding:2, textAlign:'center' }}>
-          <Typography variant='caption'>Images no available</Typography>
+          <Typography variant='caption'>{tCommon('messages.no-images')}</Typography>
         </Paper>
       </Stack>
     )
   } else {
     return (
       <Stack>
-        <GrayTitle>Images</GrayTitle>
+        <GrayTitle>{tCommon('titles.images')}</GrayTitle>
         <Carousel changeOnFirstRender={true} interval={time}>
           {projectSelected.images.map((image) => (
             <img src={image} style={{ width:'100%' }} key={image}/>
@@ -82,6 +84,9 @@ type ProjectInformationProps = {
 }
 
 function ProjectInformation ({ projectSelected }:ProjectInformationProps) {
+
+  const { t:tCommon } = useTranslation('common')
+
   return (
     <Stack gap={2}>
       <Stack>
@@ -89,13 +94,13 @@ function ProjectInformation ({ projectSelected }:ProjectInformationProps) {
         <Typography variant='body1' sx={{ color:'white' }}>{projectSelected.descriptionEnglish}</Typography>
       </Stack>
       <Stack>
-        <GrayTitle>Technologies</GrayTitle>
+        <GrayTitle>{tCommon('titles.technologies')}</GrayTitle>
         <Stack direction='row' gap={1} flexWrap='wrap'>
           {projectSelected.technologies.map((technology) => (<Paper sx={{ padding:1 }} key={technology}><Typography variant='caption'>{technology}</Typography></Paper>))}
         </Stack>
       </Stack>
       <Stack>
-        <GrayTitle>Repository</GrayTitle>
+        <GrayTitle>{tCommon('titles.repositories')}</GrayTitle>
         <Stack direction='row' columnGap={2}>
           {projectSelected.repos.map(({ title, to }) => (
             <a href={to} style={{ textDecoration:'none' }} key={title}>
@@ -110,7 +115,7 @@ function ProjectInformation ({ projectSelected }:ProjectInformationProps) {
           && 
           ( 
             <Paper sx={{ padding:2, textAlign:'center' }}>
-              <Typography variant='caption'>Repository no available</Typography>
+              <Typography variant='caption'>{tCommon('messages.no-repo')}</Typography>
             </Paper>
           )
         } 
