@@ -92,13 +92,22 @@ function LanguagesContainer () {
 }
 
 function CvContainer () {
-  const {t, i18n} = useTranslation('common')
+  const {t} = useTranslation('common')
   return (
     <Stack>
       <GrayTitle>{t('titles.cv')}</GrayTitle>
-        <Paper sx={{ padding:2, alignSelf:'start', cursor:'pointer' }}>
-          <Typography variant='subtitle2'>CV</Typography>
-        </Paper>
+        <Stack direction='row' columnGap={2}>
+          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/Briefcase%20Es.pdf?alt=media&token=aef3e82a-9bdc-445d-82fc-a1d68e9d8c1f">
+            <Paper sx={{ padding:2, paddingY:1, cursor:'pointer' }}>
+              <Typography variant='subtitle2'>CV Es</Typography>
+            </Paper>
+          </a>
+          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/Briefcase%20En.pdf?alt=media&token=6f63c8c6-c885-4809-b974-78f4aefcaccb">
+            <Paper sx={{ paddingX:2, paddingY:1, cursor:'pointer' }}>
+              <Typography variant='subtitle2'>CV En</Typography>
+            </Paper>
+          </a>
+        </Stack>
     </Stack>
   )
 }

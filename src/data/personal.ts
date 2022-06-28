@@ -58,7 +58,7 @@ export const personalDataEnglish: PersonalData = {
   languages: ['Spanish', 'English'],
   schooling: [
     {
-      title: 'Computer System Enginnering',
+      title: 'Computer System Engineering',
       career: 'Instituto Tecnológico de Veracruz'
     }
   ],
