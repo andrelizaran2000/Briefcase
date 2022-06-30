@@ -9,7 +9,8 @@ import {
   faAngular,
   faNodeJs,
   faSass,
-  faBootstrap
+  faBootstrap,
+  faJava
 } from "@fortawesome/free-brands-svg-icons"
 
 export type PersonalData = {
@@ -27,6 +28,9 @@ const technologies = [
   {icon: faSass ,title:'SASS'},
   {icon: faCss3 ,title:'Tailwind CSS'},
   {icon: faBootstrap ,title:'Bootstrap'},
+  {icon: faJava ,title:'Kotlin'},
+  {icon: faJava ,title:'Java'},
+  {icon: faJs ,title:'JS'},
   {icon: faJs ,title:'JS'},
   {icon: faJs ,title:'TS'},
   {icon: faReact ,title:'React'},
