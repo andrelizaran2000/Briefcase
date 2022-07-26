@@ -16,16 +16,16 @@
       "career": "Instituto Tecnológico de Veracruz"
     }
   ],
-  "contact-me": [
-    { 
-      "title":"Email", 
-      "to": "mailto:andrelizaran2000@gmail.com", 
-      "icon": "faVoicemail" 
+  "experience": [
+    {
+      "title": "Medio Melón",
+      "subtitle": "Desarrollador Frontend",
+      "period": "Noviembre 2021 - Julio 2022"
     },
-    { 
-      "title":"Linkedin", 
-      "to":"https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/", 
-      "icon": "faLinkedin" 
+    {
+      "title": "Raypal",
+      "subtitle": "Desarrollador móvil",
+      "period": "Noviembre 2021 - Julio 2022"
     }
   ]
 }

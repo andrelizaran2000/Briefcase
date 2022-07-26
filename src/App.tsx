@@ -8,6 +8,7 @@ import AboutMeContainer from './components/AboutMeContainer';
 import ProjectsContainer from './components/ProjectsContainer';
 import ContactMeContainer from './components/ContactMeContainer';
 import TechnologiesContainer from './components/TechnologiesContainer';
+import ExperienceContainer from './components/ExperienceContainer';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
               <TechnologiesContainer/>
             </Grid>
           </Grid>
+          <ExperienceContainer/>
           <ProjectsContainer/>
           <ContactMeContainer/>
         </Stack>

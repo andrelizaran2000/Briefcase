@@ -32,7 +32,6 @@ const technologies = [
   {icon: faJava ,title:'Kotlin'},
   {icon: faJava ,title:'Java'},
   {icon: faJs ,title:'JS'},
-  {icon: faJs ,title:'JS'},
   {icon: faJs ,title:'TS'},
   {icon: faReact ,title:'React'},
   {icon: faReact ,title:'React Native'},

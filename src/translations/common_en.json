@@ -9,7 +9,8 @@
     "projects": "Projects",
     "contact-me": "Contact me",
     "repositories": "Repositories",
-    "images": "Images"
+    "images": "Images",
+    "experience": "Experience"
   },
   "messages": {
     "no-repo": "No hay repositorios disponibles",
