@@ -97,12 +97,12 @@ function CvContainer () {
     <Stack>
       <GrayTitle>{t('titles.cv')}</GrayTitle>
         <Stack direction='row' columnGap={2}>
-          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/CV%20Es.pdf?alt=media&token=59789999-0cbd-437e-9689-2fd13634220e">
+          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/CV%20Es.pdf?alt=media&token=a70ae950-2b98-4dd9-b8e7-96b17f14a6e1">
             <Paper sx={{ padding:2, paddingY:1, cursor:'pointer' }}>
               <Typography variant='subtitle2'>CV Es</Typography>
             </Paper>
           </a>
-          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/CV%20En.pdf?alt=media&token=f2d832b4-78cf-4b98-9a9c-b0c31fe569dd">
+          <a href="https://firebasestorage.googleapis.com/v0/b/portafolio-572d2.appspot.com/o/CV%20En.pdf?alt=media&token=1d8d4a53-31e1-4d8a-a969-6be27db0ec3a">
             <Paper sx={{ paddingX:2, paddingY:1, cursor:'pointer' }}>
               <Typography variant='subtitle2'>CV En</Typography>
             </Paper>

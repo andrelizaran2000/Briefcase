@@ -1,18 +1,18 @@
 // Modules
 import { grey } from '@mui/material/colors';
-import { useContext, useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import Carousel from 'react-material-ui-carousel'
-import { Grid, Paper, Stack, Typography } from '@mui/material'
+import Carousel from 'react-material-ui-carousel';
+import { useContext, useEffect, useState } from 'react';
+import { Grid, Paper, Stack, Typography } from '@mui/material';
 
 // Components
 import { GrayTitle } from './components/Common';
 import AppBarHome from './components/AppBarHome';
+import { GeneralContext } from './components/containers/TranslateContainer';
 
 // Data
 import { ProjectData } from './data/projects';
-import { GeneralContext } from './components/containers/TranslateContainer';
 
 export default function Project() {
 

@@ -1,5 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { faDatabase, faFire, faPen, faVoicemail } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faFire, faPen, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 import { 
   faLinkedin,
   faHtml5,
@@ -10,7 +10,8 @@ import {
   faNodeJs,
   faSass,
   faBootstrap,
-  faJava
+  faJava,
+  faWhatsapp
 } from "@fortawesome/free-brands-svg-icons"
 
 export type PersonalData = {
@@ -47,8 +48,9 @@ const technologies = [
 ]
 
 const contactMe = [
-  { title:'Email', to:'mailto:andrelizaran2000@gmail.com', icon:faVoicemail },
+  { title:'Email', to:'mailto:andrelizaran2000@gmail.com', icon:faMailBulk },
   { title:'Linkedin', to:'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/', icon:faLinkedin },
+  { title: 'Whatsapp', to:'https://api.whatsapp.com/send?phone=5212293460202', icon:faWhatsapp }
 ]
 
 export const personalDataEnglish: PersonalData = {
