@@ -19,13 +19,18 @@
   "experience": [
     {
       "title": "Medio Melón",
-      "subtitle": "Desarrollador Frontend",
+      "subtitle": "Desarrollador frontend",
       "period": "Noviembre 2021 - Julio 2022"
     },
     {
       "title": "Raypal",
       "subtitle": "Desarrollador móvil",
-      "period": "Noviembre 2021 - Julio 2022"
+      "period": "Noviembre 2021 - Actual"
+    },
+    {
+      "title": "Sunkai",
+      "subtitle": "Desarrollador frontend y movil",
+      "period": "Julio 2022 - Actual"
     }
   ]
 }
